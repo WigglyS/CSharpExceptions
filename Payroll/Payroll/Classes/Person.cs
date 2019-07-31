@@ -12,10 +12,85 @@ namespace Payroll.Classes
         string lastName;
         long phoneNumber;
         Address address;
-        public string FirstName { get => firstName; set => firstName = value; }
-        public string LastName { get => lastName; set => lastName = value; }
-        public long PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
-        public Address Address { get => address; set => address = value; }
+        public string FirstName { get => firstName;
+            set {
+                try
+                {
+                    firstName = value;
+                }
+                catch(InvalidCastException e)
+                {
+                    Console.WriteLine("Cannot Convert input to First Name");
+                    Console.WriteLine(e);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception Found");
+                    Console.WriteLine(e);
+
+                }
+            }
+        }
+        public string LastName { get => lastName;
+            set
+            {
+                try
+                {
+                    lastName = value;
+                }
+                catch (InvalidCastException e)
+                {
+                    Console.WriteLine("Cannot Convert input to LastName");
+                    Console.WriteLine(e);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception Found");
+                    Console.WriteLine(e);
+
+                }
+            }
+        }
+        public long PhoneNumber { get => phoneNumber;
+            set  
+            {
+                try
+                {
+                    phoneNumber = value;
+                }
+                catch (InvalidCastException e)
+                {
+                    Console.WriteLine("Cannot Convert input to PhoneNumber");
+                    Console.WriteLine(e);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception Found");
+                    Console.WriteLine(e);
+
+                }
+            }
+        }
+        public Address Address { get => address;
+            set
+            {
+                try
+                {
+                    address = value;
+                }
+                catch (InvalidCastException e)
+                {
+                    Console.WriteLine("Cannot Convert input to Adress");
+                    Console.WriteLine(e);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception Found");
+                    Console.WriteLine(e);
+
+                }
+            }
+        }
 
        
 

@@ -13,10 +13,82 @@ namespace Payroll.Classes
         float hoursWorked;
         bool onPayroll;
 
-        public string JobTitle { get => jobTitle; set => jobTitle = value; }
-        public float Wage { get => wage; set => wage = value; }
-        public float HoursWorked { get => hoursWorked; set => hoursWorked = value; }
-        public bool OnPayroll { get => onPayroll; set => onPayroll = value; }
+        public string JobTitle { get => jobTitle; set
+            {
+                try
+                {
+                    jobTitle = value;
+                }
+                catch (InvalidCastException e)
+                {
+                    Console.WriteLine("Cannot Convert input to JobTilte");
+                    Console.WriteLine(e);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception Found");
+                    Console.WriteLine(e);
+
+                }
+            }
+        }
+        public float Wage { get => wage; set
+            {
+                try
+                {
+                    wage = value;
+                }
+                catch (InvalidCastException e)
+                {
+                    Console.WriteLine("Cannot Convert input to Wage");
+                    Console.WriteLine(e);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception Found");
+                    Console.WriteLine(e);
+
+                }
+            }
+        }
+        public float HoursWorked { get => hoursWorked; set
+            {
+                try
+                {
+                    hoursWorked = value;
+                }
+                catch (InvalidCastException e)
+                {
+                    Console.WriteLine("Cannot Convert input to HoursWorked");
+                    Console.WriteLine(e);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception Found");
+                    Console.WriteLine(e);
+
+                }
+            }
+        }
+        public bool OnPayroll { get => onPayroll; set
+            {
+                try
+                {
+                    OnPayroll = value;
+                }
+                catch (InvalidCastException e)
+                {
+                    Console.WriteLine("Cannot Convert input to wether the emplyoee is on the payroll or not");
+                    Console.WriteLine(e);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception Found");
+                    Console.WriteLine(e);
+
+                }
+            }
+        }
 
         public Employee() : base()
         {

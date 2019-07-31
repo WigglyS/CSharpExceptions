@@ -17,6 +17,7 @@ namespace Payroll
             int input = -1;
             do
             {
+
                 //Address address = new Address("111 meme street", 101, "tempe", "Arizona", 85285);
                 //employees.Add(new Employee("bob","rob",4803205454,address,"Memer",4.5f,5f,true ));
                 Console.Clear();
