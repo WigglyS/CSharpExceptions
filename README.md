@@ -1,2 +1,2 @@
-# CSharpExceptions
-The purpose of this project is to familiarize you with exceptions and exception handling in C#.  You will modify your simple employee payroll program. Your Address, Person, and Employee classes should throw appropriate exceptions when misused (i.e. if an attempt is made to pass a negative value in to the wage property). Also, your client code (the code that uses your classes) should be prepared to catch any and all exceptions that might be thrown by your classes or other classes.
+# CSharp-Payroll
+The purpose of this project is to familiarize you with object oriented programming in C#, including the concepts of classes, properties, methods, encapsulation, containment, polymorphism, and inheritance.  You must create a simple employee payroll program capable of servicing 50 employees. The user must be able to enter information for new employees, update employee information, and pay all employees who are currently on the payroll.
